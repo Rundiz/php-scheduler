@@ -1,0 +1,23 @@
+{
+	"name": "rundiz/php-schedule",
+	"type": "library",
+	"description": "Run the task on shcedule using PHP.",
+	"keywords": ["cron", "task", "schedule", "scheduler"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Vee W.",
+			"email": "kawewong@gmail.com",
+			"homepage": "http://rundiz.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Rundiz\\PhpSchedule\\" : "Rundiz/PhpSchedule"
+		}
+	}
+}
