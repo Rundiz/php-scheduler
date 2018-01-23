@@ -14,6 +14,8 @@ namespace Rundiz\PhpSchedule;
  * Run the schedule.
  *
  * @author vee
+ * @package php-schedule
+ * @version 1.0.1
  */
 class PhpSchedule
 {
