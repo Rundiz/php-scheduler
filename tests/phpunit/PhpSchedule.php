@@ -12,7 +12,7 @@ namespace Rundiz\PhpSchedule\Tests;
  *
  * @author vee
  */
-class PhpSchedule extends \Rundiz\PhpSchedule\PhpSchdule
+class PhpSchedule extends \Rundiz\PhpSchedule\PhpSchedule
 {
 
 

@@ -15,7 +15,7 @@ namespace Rundiz\PhpSchedule;
  *
  * @author vee
  */
-class PhpSchdule
+class PhpSchedule
 {
 
 
