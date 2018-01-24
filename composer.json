@@ -1,5 +1,5 @@
 {
-	"name": "rundiz/php-schedule",
+	"name": "rundiz/php-scheduler",
 	"type": "library",
 	"description": "Run the task on shcedule using PHP.",
 	"keywords": ["cron", "task", "schedule", "scheduler"],
