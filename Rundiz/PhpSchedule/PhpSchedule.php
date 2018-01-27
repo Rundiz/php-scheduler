@@ -146,7 +146,7 @@ class PhpSchedule
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-        curl_setopt($ch, CURLOPT_USERAGENT, 'Rundiz PHP Schedule. Fork me on Github!');
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Rundiz PHP Scheduler.');
 
         curl_exec($ch);
 
