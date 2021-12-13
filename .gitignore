@@ -1,2 +1,3 @@
 tests/phpunit/logs/
 tests/phpunit/logs/*
+.phpunit.result.cache
