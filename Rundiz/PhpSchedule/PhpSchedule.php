@@ -15,7 +15,7 @@ namespace Rundiz\PhpSchedule;
  *
  * @author vee
  * @package php-schedule
- * @version 1.0.1
+ * @version 1.0.2
  */
 class PhpSchedule
 {
