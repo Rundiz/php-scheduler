@@ -13,6 +13,7 @@ class AddTaskTest extends \PHPUnit\Framework\TestCase
      */
     public function testAllowedCharactersNameException()
     {
+        $this->expectException(\Exception::class);
         $PhpSchedule = new \Rundiz\PhpSchedule\PhpSchedule(__DIR__ . DIRECTORY_SEPARATOR . 'logs');
         $PhpSchedule->add('name.1', 'http://localhost/', ['00']);
     }// testAllowedCharactersNameException
@@ -23,6 +24,7 @@ class AddTaskTest extends \PHPUnit\Framework\TestCase
      */
     public function testDuplicatedNameException()
     {
+        $this->expectException(\Exception::class);
         $PhpSchedule = new \Rundiz\PhpSchedule\PhpSchedule(__DIR__ . DIRECTORY_SEPARATOR . 'logs');
         $PhpSchedule->add('name1', 'http://localhost', ['00']);
         $PhpSchedule->add('name1', 'http://localhost', ['00']);
@@ -34,6 +36,7 @@ class AddTaskTest extends \PHPUnit\Framework\TestCase
      */
     public function testNameStringException()
     {
+        $this->expectException(\InvalidArgumentException::class);
         $PhpSchedule = new \Rundiz\PhpSchedule\PhpSchedule(__DIR__ . DIRECTORY_SEPARATOR . 'logs');
         $PhpSchedule->add(100, 'http://localhost/', ['00']);
     }// testNameStringException
@@ -44,6 +47,7 @@ class AddTaskTest extends \PHPUnit\Framework\TestCase
      */
     public function testTimeDigitsException()
     {
+        $this->expectException(\Exception::class);
         $PhpSchedule = new \Rundiz\PhpSchedule\PhpSchedule(__DIR__ . DIRECTORY_SEPARATOR . 'logs');
         $PhpSchedule->add('name1', 'http://localhost', ['0.1']);
     }// testTimeDigitsException
@@ -51,9 +55,11 @@ class AddTaskTest extends \PHPUnit\Framework\TestCase
 
     public function testCorrectAdd()
     {
-        $PhpSchedule = new \Rundiz\PhpSchedule\PhpSchedule(__DIR__ . DIRECTORY_SEPARATOR . 'logs');
+        $PhpSchedule = new PhpSchedule(__DIR__ . DIRECTORY_SEPARATOR . 'logs');
         $PhpSchedule->add('name1', 'http://localhost', ['00', '03', '12', '15']);
         $PhpSchedule->add('name2', 'http://localhost', ['00', '03', '12', '15']);
+        $this->assertArrayHasKey('name1', $PhpSchedule->tasks);
+        $this->assertArrayHasKey('name2', $PhpSchedule->tasks);
     }// testCorrectAdd
 
 

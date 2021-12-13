@@ -14,6 +14,8 @@ class AaFirstTest extends \PHPUnit\Framework\TestCase
         $PhpSchedule->rrmdir(__DIR__ . DIRECTORY_SEPARATOR . 'logs');
         unset($PhpSchedule);
 
+        $this->assertFileDoesNotExist(__DIR__ . DIRECTORY_SEPARATOR . 'logs');
+
         usleep(200);
 
         $PhpSchedule = new PhpSchedule(__DIR__ . DIRECTORY_SEPARATOR . 'logs');

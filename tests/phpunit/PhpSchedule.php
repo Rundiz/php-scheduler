@@ -31,6 +31,15 @@ class PhpSchedule extends \Rundiz\PhpSchedule\PhpSchedule
     }// __construct
 
 
+    public function __get($name)
+    {
+        if (property_exists($this, $name)) {
+            return $this->{$name};
+        }
+        return '';
+    }
+
+
     public function lastRun()
     {
         return parent::lastRun();
