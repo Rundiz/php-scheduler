@@ -3,6 +3,8 @@
 Run the task on shcedule using PHP. This is not cron job or cron tab but it is the schedule tasks using PHP.<br>
 You may need cron job or not, in case that there is no cron job just include it in the main PHP file that always called when users visited the webpage.
 
+Tested on PHP 8.4.
+
 [![Latest Stable Version](https://poser.pugx.org/rundiz/php-scheduler/v/stable)](https://packagist.org/packages/rundiz/php-scheduler)
 [![License](https://poser.pugx.org/rundiz/php-scheduler/license)](https://packagist.org/packages/rundiz/php-scheduler)
 [![Total Downloads](https://poser.pugx.org/rundiz/php-scheduler/downloads)](https://packagist.org/packages/rundiz/php-scheduler)
