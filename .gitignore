@@ -1,4 +1,4 @@
-tests/phpunit/logs/
-tests/phpunit/logs/*
-.phpunit.cache
+/tests/phpunit/logs/
+/tests/phpunit/logs/*
+/.phpunit.cache
 .phpunit.result.cache
